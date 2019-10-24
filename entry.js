@@ -18,3 +18,17 @@ MongoClient.connect(url, function(err, db) {
   	});
   });
 }); 
+
+// module.exports = {
+//   GetParkingSpot: function() {
+//     return MongoClient.connect(url).then(function(db) {
+//       var db = db.db("parkirdb");
+//       var collection = db.collection("parkircollection");
+
+//       return collection.findOne({status:0});
+//     }).then(function(queryid) {
+//       console.log(queryid);
+//       return queryid;
+//     });
+//   }
+// };
