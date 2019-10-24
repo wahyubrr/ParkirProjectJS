@@ -6,3 +6,4 @@ response = requests.get(url = url)
 data = response.json()
 print(data)
 print(data['id'])
+# setelah ini kasih kodingan print QR untuk orang yang parkir
