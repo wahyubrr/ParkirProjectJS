@@ -1,0 +1,25 @@
+{
+  "name": "parkirprojectjs",
+  "version": "1.0.0",
+  "description": "Project parkiran yang bisa mentracking isi parkiran",
+  "main": "create_db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahyubrr/ParkirProjectJS.git"
+  },
+  "keywords": [
+    "ParkirProject"
+  ],
+  "author": "Wahyu Berlianto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahyubrr/ParkirProjectJS/issues"
+  },
+  "homepage": "https://github.com/wahyubrr/ParkirProjectJS#readme",
+  "dependencies": {
+    "mongodb": "^3.3.2"
+  }
+}
