@@ -6,7 +6,6 @@ var ObjectID = require('mongodb').ObjectID;
 var url = "mongodb://localhost:27017/";
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
-
 app.use(express.static('public')); //for serving static files in folder 'public'
 
 app.get('/', function(req, res) {
@@ -21,7 +20,7 @@ app.get('/', function(req, res) {
 app.get('/entry', function(req, res) {
   entry()
     .then(function(value) {
-    console.log('Async success! ', value);
+    console.log('Entry Async success! ', value);
     res.writeHead(200, { 'Content-Type': 'application/json' }); //json dikirim untuk print ID di raspberry pi
     res.write(JSON.stringify({ id: value }));
     res.end();
@@ -37,7 +36,7 @@ app.post('/exit', urlencodedParser, function(req, res) {
   console.log(response);
   exit(response.id)
     .then(function(value) {
-    console.log('Async success! ', value);
+    console.log('Exit Async success! ', value);
     // res.writeHead(200, { 'Content-Type': 'application/json' });
     // res.write(JSON.stringify({ id: value }));
     res.end();
