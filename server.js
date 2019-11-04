@@ -1,10 +1,10 @@
 var express = require('express'); // Import Node.js core module
-var app = express(); 
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID;
 var url = "mongodb://localhost:27017/";
 
+var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 app.use(express.static('public')); //for serving static files in folder 'public'
 app.set('view engine', 'ejs');
