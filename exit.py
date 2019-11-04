@@ -9,10 +9,10 @@ while 1:
 	response = requests.post(url = url, data=payload)
 	data = response.json()
 	print(data)
-	print(str(data['timegap']) + " Minutes")
+	print("Lama parkir: " + str(data['timegap']) + " Minutes")
 	timegaphour = math.ceil(data['timegap'] / 60)
 	price = timegaphour * 5000
-	print("Lama parkir: " + str(timegaphour) + " jam")
+	print("Dibulatkan menjadi: " + str(timegaphour) + " jam")
 	print("Harga: " + str(price))
 
 # setelah ini kasih kodingan yang menerima 

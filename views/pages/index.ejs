@@ -1,0 +1,28 @@
+<html >
+<head>
+    <meta charset="utf-8">
+    <% include ../partials/head %>
+</head>
+<header>
+    <% include ../partials/header %>
+</header>
+<body>
+    <section class="home">
+    <h1>Parking list</h1>
+    <ul class="list-group">
+        <% for(var i=0; i<result.length; i++) {%>
+            <li class="list-group-item">
+                <span>ID: </span><%= result[i]._id %>
+                <br/>
+                <span>Status: </span><%= result[i].status %>
+                <br/>
+                <span>Entry Date&Time: </span><%= result[i].entry_datetime %>
+            </li>
+        <% } %>
+    </ul>
+    </section>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>
