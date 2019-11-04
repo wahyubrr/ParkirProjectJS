@@ -10,10 +10,12 @@ app.use(express.static('public')); //for serving static files in folder 'public'
 
 app.get('/', function(req, res) {
   // set response header
-  res.writeHead(200, { 'Content-Type': 'text/html' }); 
+  // res.writeHead(200, { 'Content-Type': 'text/html' }); 
         
-  // set response content
-  res.write('<html><body><p>This is home Page.</p></body></html>');
+  // // set response content
+  // res.write('<html><body><p>This is home Page.</p></body></html>');
+  // res.end();
+  res.sendfile(__dirname + '/public/index.html');
   res.end();
 })
 
@@ -37,6 +39,8 @@ app.post('/exit', urlencodedParser, function(req, res) {
   exit(response.id)
     .then(function(value) {
     console.log('Exit Async success! ', value);
+    res.writeHead(200, { 'Content-Type': 'application/json' }); //json dikirim untuk print ID di raspberry pi
+    res.write(JSON.stringify({ timegap: value }));
     // res.writeHead(200, { 'Content-Type': 'application/json' });
     // res.write(JSON.stringify({ id: value }));
     res.end();
@@ -102,7 +106,7 @@ function exit(exitid) {
             db.close();
           });
 
-          resolve("The database successfully updated!");
+          resolve(timegap);
 
         });
       }); 
