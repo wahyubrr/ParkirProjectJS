@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
   checkspot()
   .then(function(value) {
-    console.log('Entry Async success! ', value);
+    console.log('Entry Async success!');
     res.render('pages/index.ejs', { result: value });
   })
   .catch(function(err) {
