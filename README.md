@@ -3,5 +3,7 @@
 Sistem untuk penentuan tempat parkir, dan juga dapat mendata tempat parkir menggunakan database yang terhubung ke internet dan bisa diakses dari mana saja. 
 
 ## Cara penggunaan
-belum update!
-Install Apache Web Server, MySQL dan PHP pada komputer anda, lalu masukkan file-file dalam repository ini ke dalam folder utama (index) dari Apache Web Server. Untuk Ubuntu 18.04 keatas, bisa menggunakan [tutorial berikut](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04).
+Install nodeJS di server anda, lalu jalankan server.js dengan menggunakan perintah 'node server.js'. Setelah program server berjalan di server yang diinginkan, jalankan program entry.py dan exit.py. Program ini akan mengatur entry dan exit dari sistem parkir ini.
+
+### Catatan
+Untuk mempermudah akses ke web server tanpa mengetikkan port, server.js bisa dijalankan pada port 80.
