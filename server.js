@@ -25,7 +25,7 @@ app.get('/entry', function(req, res) {
     .then(function(value) {
     console.log('Entry Async success! ', value);
     res.writeHead(200, { 'Content-Type': 'application/json' }); //json dikirim untuk print ID di raspberry pi
-    res.write(JSON.stringify({ id: value }));
+    res.write(JSON.stringify({ index: value.index, id: value._id }));
     res.end();
   })
   .catch(function(err) {
@@ -49,7 +49,7 @@ app.post('/exit', urlencodedParser, function(req, res) {
   });
 })
 
-var server = app.listen(8081, function() {
+var server = app.listen(80, function() {
   var host = server.address().address
   var port = server.address().port
   console.log('Node.js web server at port 8081 is running..')
@@ -78,20 +78,20 @@ function entry() {
       MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("parkirdb");
-        dbo.collection("parkircollection").findOne({status:0}, function(err, result) {
+        dbo.collection("parkircollection").findOne({status:"Empty"}, function(err, result) {
           if (err) throw err;
           console.log(result._id);
           //str = String(result._id);
         var date = new Date();
         var myquery = { _id: result._id };
-        var newvalues = { $set: {status : 1, entry_datetime : date} };
+        var newvalues = { $set: {status : "Occupied", entry_datetime : date} };
         dbo.collection("parkircollection").updateOne(myquery, newvalues, function(err, res) {
         if (err) throw err;
         console.log("1 document updated");
         db.close();
         });
 
-        resolve(result._id);
+        resolve(result);
 
         });
       });
@@ -114,7 +114,7 @@ function exit(exitid) {
           var timegap = parseInt((((timenow - result.entry_datetime) / 1000) / 60) + 1);
           console.log(timegap + ' minutes');
   
-          var newvalues = { $set: {status : 0, entry_datetime : 0} };
+          var newvalues = { $set: {status : "Empty", entry_datetime : 0} };
           dbo.collection("parkircollection").updateOne(myquery, newvalues, function(err, res) {
             if (err) throw err;
             console.log("1 document updated");
