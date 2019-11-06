@@ -1,6 +1,7 @@
 import requests
+import pyqrcode
 
-url = "http://127.0.0.1:80/entry"
+url = "http://127.0.0.1/entry"
 
 while 1:
 	input("Press Enter to enter...")
@@ -9,4 +10,7 @@ while 1:
 	print(data)
 	print("ID: " + str(data['id']))
 	print("Spot: " + str(data['index']))
-# setelah ini kasih kodingan print QR untuk orang yang parkir
+
+	#from pyqrcode import QRcode
+	qr = pyqrcode.create(data['id'])
+	qr.svg("qr/" + str(data['index']) + ".svg", scale = 8)

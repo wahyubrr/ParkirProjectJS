@@ -1,7 +1,7 @@
 import requests
 import math
 
-url = "http://127.0.0.1:80/exit"
+url = "http://127.0.0.1/exit"
 
 while 1:
 	exitid = input("Enter your id: ")
