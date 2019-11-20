@@ -20,17 +20,6 @@ app.get('/', function(req, res) {
   })
 })
 
-app.get('/about', function(req, res) {
-  checkspot()
-  .then(function(value) {
-    console.log('Entry Async success!');
-    res.render('pages/about.ejs', { result: value });
-  })
-  .catch(function(err) {
-    console.log('Caught an error! ', err);
-  })
-})
-
 app.get('/entry', function(req, res) {
   entry()
     .then(function(value) {
