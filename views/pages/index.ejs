@@ -1,4 +1,4 @@
-<html >
+<html>
 <head>
     <meta charset="utf-8">
     <% include ../partials/head %>
@@ -8,7 +8,12 @@
 </header>
 <body>
     <section class="home">
-    <h1>Parking list</h1>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Integrated Parking System</h1>
+            <p class="lead">Here, you can see the parking spot live status.</p>
+        </div>
+    </div>
     <% color0 = "bg-light" %>
     <% if(result[0].status == "Occupied") { %>
         <% color0 = "bg-dark text-light" } %>
