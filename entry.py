@@ -1,5 +1,5 @@
 import requests
-import pyqrcode
+#import pyqrcode
 
 url = "http://127.0.0.1/entry"
 
@@ -12,5 +12,5 @@ while 1:
 	print("Spot: " + str(data['index']))
 
 	#from pyqrcode import QRcode
-	qr = pyqrcode.create(data['id'])
-	qr.svg("qr/" + str(data['index']) + ".svg", scale = 8)
+	#qr = pyqrcode.create(data['id'])
+	#qr.svg("qr/" + str(data['index']) + ".svg", scale = 8)
