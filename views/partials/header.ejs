@@ -9,54 +9,28 @@
         align-items: center;
     }
 
-    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-    @media screen and (min-width: 1201px) {
-        .jumbotron h1 {
-        font-size: 4rem;
-        }
-        .jumbotron p {
-        font-size: 1.75rem;
-        }
-        .navbar a {
-        font-size: 1.5rem;
-        }
-    }
-
-    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-    @media screen and (max-width: 1200px) {
-        .jumbotron h1 {
-        font-size: 10rem;
-        }
-        .jumbotron p {
-        font-size: 5rem;
-        }
-        .jumbotron a {
-        font-size: 3rem;
-        }
-        .navbar a {
-        font-size: 4rem;
-        }
-    }
-
     </style>
 
-<nav id ="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Parking Project</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Parking Project</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger disabled" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger disabled" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
