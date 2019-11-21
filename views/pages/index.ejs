@@ -4,20 +4,25 @@
     <% include ../partials/head %>
     <style>
         /* Small devices (tablets, 768px and up) */
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             .jumbotron h1 {
-                font-size: 4em;
+                font-size: 24em;
             }
         }
         
         /* Medium devices (desktops, 992px and up) */
-        @media (min-width: 992px) {
+        @media (max-width: 992px) {
             .jumbotron h1 {
-                font-size: 6em;
+                font-size: 16em;
             }
         }
 
     /* Large devices (large desktops, 1200px and up) */
+    @media (max-width: 1200px) {
+        .jumbotron h1 {
+            font-size: 12em;
+        }
+    }
     @media (min-width: 1200px) {
         .jumbotron h1 {
             font-size: 8em;
