@@ -52,7 +52,7 @@ app.post('/exit', urlencodedParser, function(req, res) {
 var server = app.listen(80, function() {
   var host = server.address().address
   var port = server.address().port
-  console.log('Node.js web server at port 8081 is running..')
+  console.log('Node.js web server at port 80 is running..')
 })
 
 
