@@ -1,5 +1,45 @@
 <!-- views/partials/header.ejs -->
 
+<style>
+    .vertical-center {
+        min-height: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 601px) {
+        .jumbotron h1 {
+        font-size: 4rem;
+        }
+        .jumbotron p {
+        font-size: 1.75rem;
+        }
+        .navbar a {
+        font-size: 1.5rem;
+        }
+    }
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+        .jumbotron h1 {
+        font-size: 5rem;
+        }
+        .jumbotron p {
+        font-size: 2.5rem;
+        }
+        .jumbotron a {
+        font-size: 1.5rem;
+        }
+        .navbar a {
+        font-size: 2rem;
+        }
+    }
+
+    </style>
+
 <nav id ="navbar-example2" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Parking Project</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +47,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
