@@ -1,7 +1,7 @@
 import requests
 #import pyqrcode
 
-url = "http://127.0.0.1/entry"
+url = "http://159.65.7.129/entry"
 
 while 1:
 	input("Press Enter to enter...")

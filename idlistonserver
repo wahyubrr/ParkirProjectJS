@@ -1,0 +1,21 @@
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d1"), "index" : 1, "status" : "Occupied", "entry_datetime" : ISODate("2019-11-21T08:46:19.019Z") }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d2"), "index" : 2, "status" : "Occupied", "entry_datetime" : ISODate("2019-11-21T08:46:35.728Z") }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d3"), "index" : 3, "status" : "Occupied", "entry_datetime" : ISODate("2019-11-21T08:46:36.999Z") }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d4"), "index" : 4, "status" : "Occupied", "entry_datetime" : ISODate("2019-11-21T08:46:39.007Z") }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d5"), "index" : 5, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d6"), "index" : 6, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d7"), "index" : 7, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d8"), "index" : 8, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7d9"), "index" : 9, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7da"), "index" : 10, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7db"), "index" : 11, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7dc"), "index" : 12, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7dd"), "index" : 13, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7de"), "index" : 14, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7df"), "index" : 15, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7e0"), "index" : 16, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7e1"), "index" : 17, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7e2"), "index" : 18, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7e3"), "index" : 19, "status" : "Empty", "entry_datetime" : 0 }
+{ "_id" : ObjectId("5dd64d8aa0ca8b217379e7e4"), "index" : 20, "status" : "Empty", "entry_datetime" : 0 }
+>
