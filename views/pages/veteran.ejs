@@ -1,0 +1,189 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <% include ../partials/head %>
+    <style>
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .jumbotron h1 {
+                font-size: 4em;
+            }
+        }
+        @media (max-width: 768px) {
+            .jumbotron {
+                padding-bottom: 12em;
+            }
+        }
+        
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .jumbotron h1 {
+                font-size: 6em;
+            }
+        }
+        @media (max-width: 992px) {
+            .jumbotron {
+                padding-bottom: 8em;
+            }
+        }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        .jumbotron h1 {
+            font-size: 8em;
+        }
+    }
+    @media (max-width: 1200px) {
+        .jumbotron {
+            padding-bottom: 6em;
+        }
+    }
+
+    </style>
+</head>
+<header>
+    <% include ../partials/header %>
+</header>
+<body>
+    <% color0 = "bg-light" %>
+    <% if(result[0].status == "Occupied") { %>
+        <% color0 = "bg-dark text-light" } %>
+
+    <% color1 = "bg-light" %>
+    <% if(result[1].status == "Occupied") { %>
+        <% color1 = "bg-dark text-light" } %>
+
+    <% color2 = "bg-light" %>
+    <% if(result[2].status == "Occupied") { %>
+        <% color2 = "bg-dark text-light" } %>
+
+    <% color3 = "bg-light" %>
+    <% if(result[3].status == "Occupied") { %>
+        <% color3 = "bg-dark text-light" } %>
+
+    <% color4 = "bg-light" %>
+    <% if(result[4].status == "Occupied") { %>
+        <% color4 = "bg-dark text-light" } %>
+
+    <% color5 = "bg-light" %>
+    <% if(result[5].status == "Occupied") { %>
+        <% color5 = "bg-dark text-light" } %>
+
+    <% color6 = "bg-light" %>
+    <% if(result[6].status == "Occupied") { %>
+        <% color6 = "bg-dark text-light" } %>
+
+    <% color7 = "bg-light" %>
+    <% if(result[7].status == "Occupied") { %>
+        <% color7 = "bg-dark text-light" } %>
+
+    <% color8 = "bg-light" %>
+    <% if(result[8].status == "Occupied") { %>
+        <% color8 = "bg-dark text-light" } %>
+
+    <% color9 = "bg-light" %>
+    <% if(result[9].status == "Occupied") { %>
+        <% color9 = "bg-dark text-light" } %>
+   
+   <% color10 = "bg-light" %>
+    <% if(result[10].status == "Occupied") { %>
+        <% color10 = "bg-dark text-light" } %>
+
+    <% color11 = "bg-light" %>
+    <% if(result[11].status == "Occupied") { %>
+        <% color11 = "bg-dark text-light" } %>
+
+    <% color12 = "bg-light" %>
+    <% if(result[12].status == "Occupied") { %>
+        <% color12 = "bg-dark text-light" } %>
+
+    <% color13 = "bg-light" %>
+    <% if(result[13].status == "Occupied") { %>
+        <% color13 = "bg-dark text-light" } %>
+
+    <% color14 = "bg-light" %>
+    <% if(result[14].status == "Occupied") { %>
+        <% color14 = "bg-dark text-light" } %>
+
+    <% color15 = "bg-light" %>
+    <% if(result[15].status == "Occupied") { %>
+        <% color15 = "bg-dark text-light" } %>
+
+    <% color16 = "bg-light" %>
+    <% if(result[16].status == "Occupied") { %>
+        <% color16 = "bg-dark text-light" } %>
+
+    <% color17 = "bg-light" %>
+    <% if(result[17].status == "Occupied") { %>
+        <% color17 = "bg-dark text-light" } %>
+
+    <% color18 = "bg-light" %>
+    <% if(result[18].status == "Occupied") { %>
+        <% color18 = "bg-dark text-light" } %>
+
+    <% color19 = "bg-light" %>
+    <% if(result[19].status == "Occupied") { %>
+        <% color19 = "bg-dark text-light" } %>
+
+    <div id="veteran" class="container" style="height: 100vh; margin-bottom: 0px">
+        <h1 style="padding-top: 150px; padding-bottom: 10px">Jl. Veteran Parking lot</h1>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 py-4 border <%= color0 %>"><%= result[0].index %>. <%= result[0].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color1 %>"><%= result[1].index %>. <%= result[1].status %></div>
+            <div class="col-2 py-4 border <%= color2 %>"><%= result[2].index %>. <%= result[2].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color3 %>"><%= result[3].index %>. <%= result[3].status %></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 py-4 border <%= color4 %>"><%= result[4].index %>. <%= result[4].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color5 %>"><%= result[5].index %>. <%= result[5].status %></div>
+            <div class="col-2 py-4 border <%= color6 %>"><%= result[6].index %>. <%= result[6].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color7 %>"><%= result[7].index %>. <%= result[7].status %></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 py-4 border <%= color8 %>"><%= result[8].index %>. <%= result[8].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color9 %>"><%= result[9].index %>. <%= result[9].status %></div>
+            <div class="col-2 py-4 border <%= color10 %>"><%= result[10].index %>. <%= result[10].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color11 %>"><%= result[11].index %>. <%= result[11].status %></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 py-4 border <%= color12 %>"><%= result[12].index %>. <%= result[12].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color13 %>"><%= result[13].index %>. <%= result[13].status %></div>
+            <div class="col-2 py-4 border <%= color14 %>"><%= result[14].index %>. <%= result[14].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color15 %>"><%= result[15].index %>. <%= result[15].status %></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2 py-4 border <%= color16 %>"><%= result[16].index %>. <%= result[16].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color17 %>"><%= result[17].index %>. <%= result[17].status %></div>
+            <div class="col-2 py-4 border <%= color18 %>"><%= result[18].index %>. <%= result[18].status %></div>
+            <div class="col-1 border"></div>
+            <div class="col-2 py-4 border <%= color19 %>"><%= result[19].index %>. <%= result[19].status %></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="text-center">
+            <a type="button" class="btn btn-primary" style="margin-top: 15px" href="/">Go back</a>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+</html>

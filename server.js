@@ -12,8 +12,18 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
   checkspot()
   .then(function(value) {
-    console.log('Someone just logged in!');
+    console.log('Someone just visit our page!');
     res.render('pages/index.ejs', { result: value });
+  })
+  .catch(function(err) {
+    console.log('Caught an error! ', err);
+  })
+})
+app.get('/veteran', function(req, res) {
+  checkspot()
+  .then(function(value) {
+    console.log('Someone just accessing veteran parking list!');
+    res.render('pages/veteran.ejs', { result: value });
   })
   .catch(function(err) {
     console.log('Caught an error! ', err);
