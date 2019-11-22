@@ -19,11 +19,11 @@ app.get('/', function(req, res) {
     console.log('Caught an error! ', err);
   })
 })
-app.get('/veteran', function(req, res) {
+app.get('/mall-matos', function(req, res) {
   checkspot()
   .then(function(value) {
-    console.log('Someone just accessing veteran parking list!');
-    res.render('pages/veteran.ejs', { result: value });
+    console.log('Someone just access Mall-Matos parking list!');
+    res.render('pages/mall-matos.ejs', { result: value });
   })
   .catch(function(err) {
     console.log('Caught an error! ', err);
