@@ -16,7 +16,7 @@ oldtext = "start"
 # servo
 import RPi.GPIO as GPIO
 from time import sleep
-servopin = 14
+servopin = 3
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT)
 p = GPIO.PWM(servopin, 50)
@@ -82,15 +82,16 @@ while True:
 			print("Dibulatkan menjadi: " + str(timegaphour) + " jam")
 			print("Harga: " + str(price))
 			oldtext = text
+			sleep(5)
 
-                        # servo
-                        p.ChangeDutyCycle(5)
-                        sleep(0.5)
-                        p.ChangeDutyCycle(7.5)
-                        sleep(5)
-                        p.ChangeDutyCycle(5)
-                        sleep(0.5)
-                        p.ChangeDutyCycle(2.5)
+			# servo
+			p.ChangeDutyCycle(5)
+			sleep(0.5)
+			p.ChangeDutyCycle(7.5)
+			sleep(5)
+			p.ChangeDutyCycle(5)
+			sleep(0.5)
+			p.ChangeDutyCycle(2.5)
 
 		elif text[:1] != "5":
 			print("Fake QR identified!")
