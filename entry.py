@@ -25,7 +25,7 @@ while 1:
         data = response.json()
         print(data)
         print("ID: " + str(data['id']))
-        print("Spot: " + str(data['index'))
+        print("Spot: " + str(data['index']))
         p.ChangeDutyCycle(5)
         sleep(0.5)
         p.ChangeDutyCycle(7.5)
