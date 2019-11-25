@@ -82,6 +82,7 @@ while True:
 			print("Dibulatkan menjadi: " + str(timegaphour) + " jam")
 			print("Harga: " + str(price))
 			oldtext = text
+			sleep(5)
 
 			# servo
 			p.ChangeDutyCycle(5)
