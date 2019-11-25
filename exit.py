@@ -84,12 +84,12 @@ while True:
 			found.add(barcodeData)
 
 	# show the output frame
-	cv2.imshow("Barcode Scanner", frame)
-	key = cv2.waitKey(1) & 0xFF
+	#cv2.imshow("Barcode Scanner", frame)
+	#key = cv2.waitKey(1) & 0xFF
  
 	# if the `q` key was pressed, break from the loop
-	if key == ord("q"):
-		break
+	#if key == ord("q"):
+	#	break
  
 # close the output CSV file do a bit of cleanup
 print("[INFO] cleaning up...")
