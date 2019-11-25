@@ -83,14 +83,14 @@ while True:
 			print("Harga: " + str(price))
 			oldtext = text
 
-                        # servo
-                        p.ChangeDutyCycle(5)
-                        sleep(0.5)
-                        p.ChangeDutyCycle(7.5)
-                        sleep(5)
-                        p.ChangeDutyCycle(5)
-                        sleep(0.5)
-                        p.ChangeDutyCycle(2.5)
+			# servo
+			p.ChangeDutyCycle(5)
+			sleep(0.5)
+			p.ChangeDutyCycle(7.5)
+			sleep(5)
+			p.ChangeDutyCycle(5)
+			sleep(0.5)
+			p.ChangeDutyCycle(2.5)
 
 		elif text[:1] != "5":
 			print("Fake QR identified!")
