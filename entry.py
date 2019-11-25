@@ -28,11 +28,11 @@ while 1:
         p.ChangeDutyCycle(5)
         sleep(0.5)
         p.ChangeDutyCycle(2.5)
-        #response = requests.get(url = url)
-        #data = response.json()
-        #print(data)
-        #print("ID: " + str(data['id']))
-        #print("Spot: " + str(data['index']))
+        response = requests.get(url = url)
+        data = response.json()
+        print(data)
+        print("ID: " + str(data['id']))
+        print("Spot: " + str(data['index']))
         check = 0
 	#from pyqrcode import QRcode
         #qr = pyqrcode.create(data['id'])
