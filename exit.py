@@ -16,7 +16,7 @@ oldtext = "start"
 # servo
 import RPi.GPIO as GPIO
 from time import sleep
-servopin = 14
+servopin = 3
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servopin, GPIO.OUT)
 p = GPIO.PWM(servopin, 50)
