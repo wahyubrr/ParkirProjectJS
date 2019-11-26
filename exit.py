@@ -11,7 +11,6 @@ import cv2
 import requests
 import math
 exiturl = "http://159.65.7.129/exit"
-oldtext = "start"
 
 # servo
 import RPi.GPIO as GPIO
@@ -70,7 +69,7 @@ while True:
 		newstr = text.replace(" (QRCODE)", "")
 		
 		# if qrcode is the same, don't send http request again
-		if oldtext != text and text[:1] == "5":
+		if text[:1] == "5":
 			# send http request to server
 			payload = {'id': newstr}
 			response = requests.post(url = exiturl, data=payload)
@@ -81,7 +80,6 @@ while True:
 			price = timegaphour * 5000
 			print("Dibulatkan menjadi: " + str(timegaphour) + " jam")
 			print("Harga: " + str(price))
-			oldtext = text
 			sleep(5)
 
 			# servo
