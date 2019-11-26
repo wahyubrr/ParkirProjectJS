@@ -80,7 +80,7 @@ while True:
 			price = timegaphour * 5000
 			print("Dibulatkan menjadi: " + str(timegaphour) + " jam")
 			print("Harga: " + str(price))
-			sleep(5)
+			input("Press enter to continue...")
 
 			# servo
 			p.ChangeDutyCycle(5)
