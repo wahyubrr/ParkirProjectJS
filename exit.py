@@ -93,7 +93,7 @@ while True:
 
 		elif text[:1] != "5":
 			print("Fake QR identified!")
-			sleep(0.5)
+			sleep(1)
 
 		# if the barcode text is currently not in our CSV file, write
 		# the timestamp + barcode to disk and update the set
