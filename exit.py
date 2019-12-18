@@ -10,7 +10,7 @@ import cv2
 # http request
 import requests
 import math
-exiturl = "http://159.65.7.129/exit"
+exiturl = "http://192.168.43.135/exit"
 
 # servo
 import RPi.GPIO as GPIO

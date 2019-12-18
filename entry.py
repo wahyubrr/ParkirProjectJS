@@ -12,7 +12,7 @@ p = GPIO.PWM(servopin, 50) # 50Hz
 p.start(2.5) # Initialization
 
 button = Button(3)
-url = "http://159.65.7.129/entry"
+url = "http://192.168.43.135/entry"
 check = 0
 
 while 1:
